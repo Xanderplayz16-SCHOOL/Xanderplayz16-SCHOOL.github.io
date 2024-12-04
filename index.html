@@ -1,2 +1,11 @@
 <h1>Boot.dev CDN</h1>
-<p>Nothing here, don't look.</p>
+<label for="cdnid"></label>
+<input type="text" id="cdnid" name="cdnid" />
+<script>
+var cdnid = document.getElementById("cdnid");
+cdnid.addEventListener("keydown", function (e) {
+    if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
+        location.href += cdnid.target.value
+    }
+});
+</script>
