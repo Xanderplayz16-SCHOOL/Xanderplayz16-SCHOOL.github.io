@@ -5,7 +5,7 @@
 var cdnid = document.getElementById("cdnid");
 cdnid.addEventListener("keydown", function (e) {
     if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
-        location.href += cdnid.target.value
+        location.href = 'http://bar.foo.ng/' + cdnid.target.value
     }
 });
 </script>
